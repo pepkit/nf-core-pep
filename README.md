@@ -7,7 +7,7 @@
 ## Validate:
 
 ```
-eido validate config.yaml
+eido validate config.yaml -s http://schema.databio.org/pep/2.0.0.yaml
 ```
 
 ## Inspect
@@ -24,4 +24,27 @@ strandedness:   reverse
 fastq_1:        https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357070_1.fastq.gz, https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357071_1.fastq.gz
 fastq_2:        https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357070_2.fastq.gz, https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357071_2.fastq.gz
 subsample_name: 0, 1
+```
+
+
+## Use derived attributes
+
+```
+eido validate config_derived_attrs.yaml -s http://schema.databio.org/pep/2.0.0.yaml
+```
+
+```
+eido inspect config_derived_attrs.yaml -n WT_REP1
+```
+
+Same output as above:
+```
+Sample 'WT_REP1' in Project (/home/nsheff/code/incubator/nf-core-pep/config_derived_attrs.yaml)
+
+sample_name:    WT_REP1
+strandedness:   reverse
+fastq_1:        https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357070_1.fastq.gz, https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357071_1.fastq.gz
+fastq_2:        https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357070_2.fastq.gz, https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357071_2.fastq.gz
+subsample_name: 0, 1
+
 ```
