@@ -8,5 +8,5 @@ sample_modifiers:
       - read1
       - read2
     sources:
-      read1: https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357070_1.fastq.gz, https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/{SRR}_1.fastq.gz
-      read2: https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357070_1.fastq.gz, https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/{SRR}_2.fastq.gz
+      read1: https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/{SRR}_1.fastq.gz
+      read2: https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/{SRR}_2.fastq.gz
